@@ -18,7 +18,7 @@ $(document).ready(function () {
     useGrouping: false}); // форматирование переменной с этажом, чтобы было 01, а не 1
     $(".counter").text(usCurrentFloor); // запись значение этажа в счётчик справа
     floorPath.removeClass("current-floor"); // удаляем активный класс у этажей
-    $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor'); // подсветка текущего этажа
+    $(`[data-floor=${usCurrentFloor}] `).toggleClass('current-floor'); // подсветка текущего этажа
     };
   });
 
